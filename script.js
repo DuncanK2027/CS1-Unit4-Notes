@@ -18,3 +18,10 @@ console.log(username);
 
 // DECLARE + ASSIGN in one step
 let luckyNum = 13;
+
+// Create a variable that holds a NUMBER
+let luckyNum = 13; //numbers don't need quotes!
+console.log(luckyNum);
+// CHANGE the value stored in a variable (don't repeat LET)
+luckyNum = 7;
+console.log(luckyNum);
