@@ -20,7 +20,7 @@ console.log(username);
 let luckyNum = 13;
 
 // Create a variable that holds a NUMBER
-let luckyNum = 13; //numbers don't need quotes!
+luckyNum = 13; //numbers don't need quotes!
 console.log(luckyNum);
 // CHANGE the value stored in a variable (don't repeat LET)
 luckyNum = 7;
@@ -47,7 +47,7 @@ console.log("hello" + "world");
 // OR Concatenate a literal String with a VARIABLE!
 console.log("My age is "  + "age");
 console.log("My age in ten years is " + ageInTen);
-console.log(My ageDogYears " + age");
+console.log("My ageDogYears " + age);
 
 
 // can also concatenate while making variables
@@ -73,3 +73,21 @@ function skincare() {
 }
 //CALL the function to use it! 
 skincare();
+skincare(); // can run the function again
+
+//ANALOGY: Functions are like RECIPES
+//Ex. of a function that needs parameters (input/"ingredients") and RETURNS a new value (output/"meal")
+
+// if you need parameters, list some variables inside the parentheses after the function name
+function makeSando(filling, sauce, bread) {
+    let sando; //new variable to represent sandwich
+    sando = filling + " and " + sauce + " on " + bread;
+    return sando; // OUTPUT!
+}
+
+// must "pass in" actual arguments to use the function
+let mySando = makeSando("peanutbutter", "jelly", "bread");
+console.log(mySando);
+
+// shortcut to see return values
+console.log( makeSando("pb", "j", "wonderbread") );
