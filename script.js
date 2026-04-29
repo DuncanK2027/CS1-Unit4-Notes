@@ -91,3 +91,46 @@ console.log(mySando);
 
 // shortcut to see return values
 console.log( makeSando("pb", "j", "wonderbread") );
+
+/* Selection/branching (CONDITIONALS)
+    A BOOLEAN EXPRESSION is like a QUESTION that has a boolean ANSWER (true/false)
+*/
+
+console.log(1 > 2); //false is the ANSWER
+console.log("Is 10 less than 5?");
+console.log(10 < 5);
+
+// Check for EQUALITY using the == operator (or ===)
+console.log(1 == 1); // true!
+console.log(1 != 1); // false -> asking if NOT equal
+console.log("yes" == "yes"); // works for Strings!
+console.log("nick" != "duncan");
+
+// Strings can be compared too
+console.log("Arian" > "Carolyn");
+console.log("Zebra" > "Dog"); // true Z comes later than D
+console.log("Apple" < "Banana"); // true, A comes before B
+console.log("pelican" > "PELICAN"); // case mattters!
+
+// Can use comparison operators between VARIABLES & values too
+let password = "abc123!";
+console.log("hotdog" == password); 
+
+//IF STATEMENTS use conditionals/boolean expressions
+// to make DECISIONS about which code to execute (run)
+let userAge = 17;
+
+if (userAge >= 17) {
+    //code in the curly brackets only runs if TRUE! 
+    console.log("you are old enough for a NY license");
+}
+
+// ELSE IF BLOCKs let you test multiple options 
+else if (userAge == 16) {
+    console.log("you can get a learners permit!");
+}
+
+// ELSE BLOCK accounts for the "otherwise..." case
+else {
+    console.log("too young to drive");
+}
